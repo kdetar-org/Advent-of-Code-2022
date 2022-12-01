@@ -4,9 +4,12 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.concurrent.Callable;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Day1_Part1 implements Callable<Integer> {
+import Utilities.Problem;
+
+public class Day1_Part1 extends Problem<Integer> {
     BufferedReader br;
 
     public Day1_Part1(String resource) {
@@ -16,27 +19,39 @@ public class Day1_Part1 implements Callable<Integer> {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        prework();
     }
 
     @Override
-    public Integer call() throws Exception {
+    protected void prework() {
+        input = new ArrayList<String>();
+        String line;
         try {
-            String oneSnack = br.readLine();
-            int maxCalories = 0;
-            int curCalories = 0;
-            while (oneSnack != null) {
-                if (oneSnack.isEmpty()) {
-                    maxCalories = Math.max(maxCalories, curCalories);
-                    curCalories = 0;
-                } else {
-                    curCalories += Integer.parseInt(oneSnack);
-                }
-                oneSnack = br.readLine();
+            line = br.readLine();
+
+            while (line != null) {
+                input.add(line);
+                line = br.readLine();
             }
-            return maxCalories;
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
+    }
+
+    List<String> input;
+
+    @Override
+    public Integer call() throws Exception {
+        int maxCalories = 0;
+        int curCalories = 0;
+        for (int i = 0; i < input.size(); i++) {
+            if (input.get(i).isEmpty()) {
+                maxCalories = Math.max(maxCalories, curCalories);
+                curCalories = 0;
+            } else {
+                curCalories += Integer.parseInt(input.get(i));
+            }
+        }
+        return maxCalories;
     }
 }
