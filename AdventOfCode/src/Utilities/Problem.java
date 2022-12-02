@@ -13,18 +13,18 @@ public abstract class Problem<T> implements Callable<T> {
     long endingMemory = 0;
     long runTimeInNanoSeconds = -1;
     long memoryUsedInBytes = -1;
-    System.gc(); // used to get heap memory measurement to behave
-    startingMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+    //System.gc(); // used to get heap memory measurement to behave
+    //startingMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
     startTime = System.nanoTime();
     T t = call();
     endTime = System.nanoTime();
-    endingMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+    //endingMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
     runTimeInNanoSeconds = (endTime - startTime);
     if ((endingMemory != startingMemory) || memoryUsedInBytes == -1) {
       memoryUsedInBytes = endingMemory - startingMemory;
     }
     System.out.println(problem + t);
     System.out.println("Time in Milliseconds: " + (float) runTimeInNanoSeconds / 1000000.0);
-    System.out.println("Memory Usage in Bytes: " + memoryUsedInBytes);
+    //System.out.println("Memory Usage in Bytes: " + memoryUsedInBytes);
   }
 }

@@ -1,4 +1,4 @@
-package Day1;
+package Day2;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,10 +9,10 @@ import java.util.List;
 
 import Utilities.Problem;
 
-public class Day1_Part1 extends Problem<Integer> {
-    
+public class Day2_Part2 extends Problem<Integer>{
+
     private BufferedReader br;
-    public Day1_Part1(String resource) {
+    public Day2_Part2(String resource){
         try {
             FileReader fr = new FileReader(new File(resource));
             br = new BufferedReader(fr);
@@ -39,19 +39,21 @@ public class Day1_Part1 extends Problem<Integer> {
     }
 
     List<String> input;
-
     @Override
     public Integer call() throws Exception {
-        int maxCalories = 0;
-        int curCalories = 0;
-        for (int i = 0; i < input.size(); i++) {
-            if (input.get(i).isEmpty()) {
-                maxCalories = Math.max(maxCalories, curCalories);
-                curCalories = 0;
-            } else {
-                curCalories += Integer.parseInt(input.get(i));
-            }
+        int points = 0;
+        int winLose;
+        //1 for rock, 2 for paper, 3 for scissors
+        for(String s : input){
+            //X = 0, Y = 1, Z = 2;
+            winLose = s.charAt(2)-'X'; 
+            //Z To win, we need to shift 4
+            //Y To tie, we need to shift 3
+            //X To lose, we need to shift 2
+            //A = 2, B = 3 , C = 4
+            points += ((s.charAt(0)-'A' + winLose + 2)%3) + 1;
+            points += winLose*3;
         }
-        return maxCalories;
+        return points;
     }
 }

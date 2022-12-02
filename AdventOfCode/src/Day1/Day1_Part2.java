@@ -5,14 +5,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.PriorityQueue;
 import Utilities.Problem;
 
 public class Day1_Part2 extends Problem<Integer> {
-    BufferedReader br;
 
+    private BufferedReader br;
     public Day1_Part2(String resource) {
         try {
             FileReader fr = new FileReader(new File(resource));
