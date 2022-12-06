@@ -1,44 +1,14 @@
 package Day3;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import Utilities.Problem;
 
 public class Day3_Part1 extends Problem<Integer>{
 
-    private BufferedReader br;
-    public Day3_Part1(String resource){
-        try {
-            FileReader fr = new FileReader(new File(resource));
-            br = new BufferedReader(fr);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        prework();
-    }
-
-    List<String> input;
-    @Override
-    protected void prework() {
-        input = new ArrayList<String>();
-        String line;
-        try {
-            line = br.readLine();
-
-            while (line != null) {
-                input.add(line);
-                line = br.readLine();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }        
+    public Day3_Part1(String resource) {
+        super(resource);
     }
 
     @Override
