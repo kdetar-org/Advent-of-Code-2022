@@ -1,4 +1,4 @@
-package Day4;
+package Year_2022.Day4;
 
 import Utilities.Problem;
 

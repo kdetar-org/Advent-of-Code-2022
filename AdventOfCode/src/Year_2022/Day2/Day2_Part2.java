@@ -1,6 +1,5 @@
-package Day2;
+package Year_2022.Day2;
 
-import java.util.List;
 import Utilities.Problem;
 
 public class Day2_Part2 extends Problem<Integer>{
@@ -9,7 +8,6 @@ public class Day2_Part2 extends Problem<Integer>{
         super(resource);
     }
     
-    List<String> input;
     @Override
     public Integer call() throws Exception {
         int points = 0;

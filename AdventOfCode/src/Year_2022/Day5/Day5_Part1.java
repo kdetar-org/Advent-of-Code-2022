@@ -1,13 +1,10 @@
-package Day5;
-
-import java.util.LinkedList;
-import java.util.List;
+package Year_2022.Day5;
 
 import Utilities.Problem;
 
-public class Day5_Part2 extends Problem<String>{
+public class Day5_Part1 extends Problem<String> {
 
-    public Day5_Part2(String resource) {
+    public Day5_Part1(String resource) {
         super(resource);
     }
 
@@ -28,7 +25,7 @@ public class Day5_Part2 extends Problem<String>{
                     Integer.parseInt(split[1]),
                     Integer.parseInt(split[3]),
                     Integer.parseInt(split[5]),
-                    true);
+                    false);
         }
 
         return pw.getTopBoxes();

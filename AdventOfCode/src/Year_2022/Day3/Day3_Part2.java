@@ -1,4 +1,4 @@
-package Day3;
+package Year_2022.Day3;
 
 import java.util.ArrayList;
 import java.util.HashSet;

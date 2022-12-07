@@ -1,4 +1,4 @@
-package Day3;
+package Year_2022.Day3;
 
 import java.util.HashSet;
 import java.util.Set;
