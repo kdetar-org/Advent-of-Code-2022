@@ -20,7 +20,7 @@ public class App {
     private static final String DAY6_INPUT = "resources/Day6_Elf_Signal.txt";
     private static final String DAY6_FISHY_INPUT = "resources/Day6_2021_LanternFish.txt";
     private static final String DAY7_INPUT = "resources/Day7_DirectoryInput.txt";
-    private static final String DAY8_INPUT = "resources/Day8_DirectoryInput.txt";
+    private static final String DAY8_INPUT = "resources/Day8_Tree_Patch.txt";
     
     public static void main(String[] args) throws Exception {
         
@@ -49,8 +49,8 @@ public class App {
         new Day7_Part1(DAY7_INPUT).callWithMetrics("\nDay7 Part1: ");
         new Day7_Part2(DAY7_INPUT).callWithMetrics("Day7 Part2: ");
 
-        new Day8_Part1(DAY8_INPUT).callWithMetrics("\nDay7 Part1: ");
-        new Day8_Part2(DAY8_INPUT).callWithMetrics("Day7 Part2: ");
+        new Day8_Part1(DAY8_INPUT).callWithMetrics("\nDay8 Part1: ");
+        new Day8_Part2(DAY8_INPUT).callWithMetrics("Day8 Part2: ");
                 
         System.out.println("\n -----End of Block-----\n"); 
     }
