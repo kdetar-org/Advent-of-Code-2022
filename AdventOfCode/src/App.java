@@ -7,8 +7,8 @@ import Year_2022.Day5.*;
 import Year_2022.Day6.*;
 import Year_2022.Day7.*;
 import Year_2022.Day8.*;
-import Year_2022.Day9.Day9_Part1;
-import Year_2022.Day9.Day9_Part2;
+import Year_2022.Day9.*;
+import Year_2022.Day10.*;
 
 
 
@@ -24,6 +24,7 @@ public class App {
     private static final String DAY7_INPUT = "resources/Day7_DirectoryInput.txt";
     private static final String DAY8_INPUT = "resources/Day8_Tree_Patch.txt";
     private static final String DAY9_INPUT = "resources/Day9_Elfen_Rope_Dynamics.txt";
+    private static final String DAY10_INPUT = "resources/Day10_CRT.txt";
 
     
     public static void main(String[] args) throws Exception {
@@ -57,8 +58,11 @@ public class App {
         // new Day8_Part1(DAY8_INPUT).callWithMetrics("\nDay8 Part1: ");
         // new Day8_Part2(DAY8_INPUT).callWithMetrics("Day8 Part2: ");
 
-        new Day9_Part1(DAY9_INPUT).callWithMetrics("\nDay9 Part1: ");
-        new Day9_Part2(DAY9_INPUT).callWithMetrics("Day9 Part2: ");
+        //new Day9_Part1(DAY9_INPUT).callWithMetrics("\nDay9 Part1: ");
+        //new Day9_Part2(DAY9_INPUT).callWithMetrics("Day9 Part2: ");
+
+        //new Day10_Part1(DAY10_INPUT).callWithMetrics("\nDay10 Part1: ");
+        new Day10_Part2(DAY10_INPUT).callWithMetrics("Day10 Part2: \n");
 
         System.out.println("\n -----End of Block-----\n"); 
 
