@@ -1,5 +1,6 @@
 import year_2022.day11.*;
 import year_2022.day12.*;
+import year_2022.day13.*;
 import year_2022.day1.*;
 import year_2022.day2.*;
 import year_2022.day3.*;
@@ -28,6 +29,7 @@ public class App {
     private static final String DAY10_INPUT = "Day10_CRT.txt";
     private static final String DAY11_INPUT = "Day11_MonkeyBusiness.txt";
     private static final String DAY12_INPUT = "Day12_HillClimbing.txt";
+    private static final String DAY13_INPUT = "Day13_DistressSignal.txt";
 
     
     public static void main(String[] args) throws Exception {
@@ -69,8 +71,11 @@ public class App {
         // new Day11_Part1(DAY11_INPUT).callWithMetrics("\nday11 Part1: ");
         // new Day11_Part2(DAY11_INPUT).callWithMetrics("day11 Part2: ");
 
-        new Day12_Part1(DAY12_INPUT).callWithMetrics("\nday12 Part1: ");
-        new Day12_Part2(DAY12_INPUT).callWithMetrics("day12 Part2: ");
+        // new Day12_Part1(DAY12_INPUT).callWithMetrics("\nday12 Part1: ");
+        // new Day12_Part2(DAY12_INPUT).callWithMetrics("day12 Part2: ");
+
+        new Day13_Part1(DAY13_INPUT).callWithMetrics("\nday13 Part1: ");
+        new Day13_Part2(DAY13_INPUT).callWithMetrics("day13 Part2: ");
 
         System.out.println("\n -----End of Block-----\n"); 
 
