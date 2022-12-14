@@ -1,4 +1,5 @@
 import year_2022.day11.*;
+import year_2022.day12.*;
 import year_2022.day1.*;
 import year_2022.day2.*;
 import year_2022.day3.*;
@@ -26,6 +27,7 @@ public class App {
     private static final String DAY9_INPUT = "Day9_Elfen_Rope_Dynamics.txt";
     private static final String DAY10_INPUT = "Day10_CRT.txt";
     private static final String DAY11_INPUT = "Day11_MonkeyBusiness.txt";
+    private static final String DAY12_INPUT = "Day12_HillClimbing.txt";
 
     
     public static void main(String[] args) throws Exception {
@@ -43,7 +45,6 @@ public class App {
         
         // new Day4_Part1(DAY4_INPUT).callWithMetrics("\nday4 Part1: ");
         // new Day4_Part2(DAY4_INPUT).callWithMetrics("day4 Part2: ");
-        
 
         // new Day5_Part1(DAY5_INPUT).callWithMetrics("\nday5 Part1: ");
         // new Day5_Part2(DAY5_INPUT).callWithMetrics("day5 Part2: ");
@@ -59,14 +60,17 @@ public class App {
         // new Day8_Part1(DAY8_INPUT).callWithMetrics("\nday8 Part1: ");
         // new Day8_Part2(DAY8_INPUT).callWithMetrics("day8 Part2: ");
 
-        //new Day9_Part1(DAY9_INPUT).callWithMetrics("\nday9 Part1: ");
-        //new Day9_Part2(DAY9_INPUT).callWithMetrics("day9 Part2: ");
+        // new Day9_Part1(DAY9_INPUT).callWithMetrics("\nday9 Part1: ");
+        // new Day9_Part2(DAY9_INPUT).callWithMetrics("day9 Part2: ");
 
-        //new Day10_Part1(DAY10_INPUT).callWithMetrics("\nday10 Part1: ");
-        //new Day10_Part2(DAY10_INPUT).callWithMetrics("day10 Part2: \n");
+        // new Day10_Part1(DAY10_INPUT).callWithMetrics("\nday10 Part1: ");
+        // new Day10_Part2(DAY10_INPUT).callWithMetrics("day10 Part2: \n");
 
-        new Day11_Part1(DAY11_INPUT).callWithMetrics("\nday11 Part1: ");
-        new Day11_Part2(DAY11_INPUT).callWithMetrics("day11 Part2: ");
+        // new Day11_Part1(DAY11_INPUT).callWithMetrics("\nday11 Part1: ");
+        // new Day11_Part2(DAY11_INPUT).callWithMetrics("day11 Part2: ");
+
+        new Day12_Part1(DAY12_INPUT).callWithMetrics("\nday12 Part1: ");
+        new Day12_Part2(DAY12_INPUT).callWithMetrics("day12 Part2: ");
 
         System.out.println("\n -----End of Block-----\n"); 
 
