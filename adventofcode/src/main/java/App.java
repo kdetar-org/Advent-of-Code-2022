@@ -34,6 +34,7 @@ public class App {
     private static final String DAY13_INPUT = "Day13_DistressSignal.txt";
     private static final String DAY14_INPUT = "Day14_Regolith_Reservoir.txt";
     private static final String DAY15_INPUT = "Day15_Beacon_Exclusion_Zone.txt";
+    private static final String DAY16_INPUT = "Day16_Probuscidea_Volcanium.txt";
 
     
     public static void main(String[] args) throws Exception {
