@@ -26,7 +26,8 @@ public class Day17 extends Problem<Integer> {
         
         //1,000,000,000,000
         //579,710,143 full cycles
-        //Missing 3,325 blocks
+        //Missing 3,325 blocks = 5198
+        //total heigh gained over 1T blocks = 1,566,376,811,584
         int prevHeight = 0;
         int spawnedShapes = 0;
         for(int i = 0; i < 3325; i ++){
