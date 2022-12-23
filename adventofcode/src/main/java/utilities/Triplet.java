@@ -10,6 +10,7 @@ public class Triplet {
         this.y = y;
         this.z = z; 
     }
+    
     @Override
     public int hashCode(){
         return Objects.hash(x,y,z);

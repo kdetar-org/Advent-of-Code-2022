@@ -68,9 +68,7 @@ public class Day18 extends Problem<Integer> {
                     toInvestigate.add(trip);
                     visited.add(trip);
                 }
-
             }
-
         }
         return sa;
     }

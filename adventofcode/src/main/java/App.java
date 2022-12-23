@@ -5,6 +5,7 @@ import year_2022.day14.*;
 import year_2022.day15.*;
 import year_2022.day17.*;
 import year_2022.day18.*;
+import year_2022.day20.*;
 import year_2022.day1.*;
 import year_2022.day2.*;
 import year_2022.day3.*;
@@ -39,6 +40,7 @@ public class App {
     private static final String DAY16_INPUT = "Day16_Probuscidea_Volcanium.txt";
     private static final String DAY17_INPUT = "Day17_Pyroclastic_Flow.txt";
     private static final String DAY18_INPUT = "Day18_Boiling_Boulders.txt";
+    private static final String DAY20_INPUT = "Day20_Grove_Positioning_System.txt";
 
     
     public static void main(String[] args) throws Exception {
@@ -91,7 +93,9 @@ public class App {
 
         // new Day17(DAY17_INPUT).callWithMetrics("day17 : ");
 
-        new Day18(DAY18_INPUT).callWithMetrics("day18 Part 2: ");
+        // new Day18(DAY18_INPUT).callWithMetrics("day18 Part 2: ");
+
+        new Day20(DAY20_INPUT).callWithMetrics("day20: ");
 
         System.out.println("\n -----End of Block-----\n"); 
 
